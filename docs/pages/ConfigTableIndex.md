@@ -19,6 +19,8 @@ subMaxLevel     number          Mỗi thẻ H sẽ tương ứng với 1 đề m
 
 loadNavbar      Boolean         Hiển thị custom navbar
 
+auto2top        Boolean         Scroll tới đầu trang khi chuyển routes
+
 # Title <!-- Docsify-ignore -->:  Viết trong file .md để loại thẻ thẻ H này khỏi sideBar
 # Getting Started <!-- {docsify-ignore-all} --> : Đặt ở đầu file .d để loại toàn bộ chỉ mục trong file này ra khỏi sideBar
 ```

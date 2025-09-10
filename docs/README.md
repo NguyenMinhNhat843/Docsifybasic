@@ -1,4 +1,4 @@
-## Docsify cơ bản
+# Bắt đầu nhanh
 
 #### Lệnh cài đặt global
 

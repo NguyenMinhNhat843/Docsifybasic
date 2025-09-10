@@ -13,17 +13,24 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     />
-    <!-- Thêm Prism.js và theme -->
+    <!-- <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"
+    /> -->
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css"
     />
-    <script src="//cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-html.min.js"></script>
   </head>
+  <style>
+    html {
+      scroll-behavior: smooth; /* hỗ trợ hầu hết browser */
+    }
+  </style>
   <body>
     <nav>
       <a href="#">Anh</a>
@@ -32,14 +39,28 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
+        search: {
+          placeholder: "Tìm kiếm...",
+          noData: "Không tìm thấy!",
+        },
         coverpage: true,
         loadNavbar: true,
         loadSidebar: true,
         subMaxLevel: 3,
+        auto2top: true,
+        autoHeader: true,
+        logo: "_media/logo.png",
       };
+
+      // Thêm smooth scroll
+      document.addEventListener("DOMContentLoaded", () => {
+        // apply smooth scroll bằng CSS
+        document.documentElement.style.scrollBehavior = "smooth";
+      });
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-emoji"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   </body>
 </html>
